@@ -26,7 +26,11 @@
  // function to make AJAX call to the server
 	 $(document).ready(function(){  
 		 
+<<<<<<< HEAD
 		
+=======
+		/*  alert("Hi Gift"); */
+>>>>>>> 2bf5b78c74e185590bab4604127dabbdfb35ecc4
 	$("#register").submit(function(e){
 	  console.log("in submit");
 	     e.preventDefault();
