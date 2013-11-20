@@ -26,7 +26,7 @@
  // function to make AJAX call to the server
 	 $(document).ready(function(){  
 		 
-		 alert("Hi Gift");
+		/*  alert("Hi Gift"); */
 	$("#register").submit(function(e){
 	  console.log("in submit");
 	     e.preventDefault();
