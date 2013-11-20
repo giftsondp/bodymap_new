@@ -40,6 +40,8 @@
 
     
         <script id="vertexShader" type="x-shader/x-vertex">
+
+
 varying vec2 vUv;
 varying vec3 vNormal;
 varying vec3 vViewPosition;
