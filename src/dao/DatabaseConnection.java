@@ -23,13 +23,9 @@ public class DatabaseConnection {
 
 	
 	/*Uncomment when deployin in cloudbees*/
-	/*public DatabaseConnection() {
+	public DatabaseConnection() {
 		try {
-			Class.forName("com.mysql.jdbc.Driver").newInstance();
-			con = DriverManager.getConnection(
-					"jdbc:mysql://localhost:3306/bodymap", "root",
-					"12345");
-			
+				
 			Context ctx = new InitialContext();
 			DataSource ds = (DataSource)ctx.lookup("java:comp/env/jdbc/mydb");
 			 con = ds.getConnection();
@@ -43,9 +39,9 @@ public class DatabaseConnection {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	}*/
+	}
 	
-	public DatabaseConnection() {
+	/*public DatabaseConnection() {
 		try {
 			Class.forName("com.mysql.jdbc.Driver").newInstance();
 			con = DriverManager.getConnection(
@@ -66,7 +62,7 @@ public class DatabaseConnection {
 			e.printStackTrace();
 		}
 	}
-	
+	*/
 	
 	
 	/* Sud start */
