@@ -379,12 +379,13 @@ public class DatabaseConnection {
 		try {
 			System.out.println("inside dao ----------1");
 			PreparedStatement stmt = con
-					.prepareStatement("SELECT * FROM registration WHERE BodyMap=?");
-			stmt.setString(1,"No");
+					.prepareStatement("SELECT * FROM registration WHERE BodyMap=? and role=?");
+					stmt.setString(1,"no");
+					stmt.setString(2,"patient");
 			System.out.println("inside dao 2 - after executing prepared stmt");
 
 			ResultSet rs = stmt.executeQuery();
-
+			
 			if (rs != null) {
 				while (rs.next()) {
 					Registration reg = new Registration();
