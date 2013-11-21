@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+  <display-name>Two Dimensional Human Body Image Mapping on EHR</display-name>
+  <welcome-file-list>
+    <welcome-file>/Home.jsp</welcome-file>
+  </welcome-file-list>
+  <session-config>
+    <session-timeout>40</session-timeout>
+  </session-config>
+  <error-page>
+    <exception-type>javax.faces.application.ViewExpiredException</exception-type>
+    <location>/Error.jsp</location>
+  </error-page>
+</web-app>
